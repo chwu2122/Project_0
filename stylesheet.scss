@@ -1,0 +1,114 @@
+
+$purple: purple;
+
+%samefont {
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: bold;
+    
+    
+}
+
+#link-pink {
+    @extend %samefont;
+    background: pink;
+    font-size: 150%
+}
+
+#link-red {
+    @extend %samefont;
+    background: red;
+}
+
+
+
+img {
+    width: 10%;
+    height: 10%;
+    }
+
+#colors {
+    color: Violet;
+    }    
+    
+#menu {
+    background-color: $purple;
+    font-size: 25px;
+    width: 50%;
+    height: 50%;
+    
+    }
+    
+a:hover {
+    background-color: yellow;
+}
+
+body {
+    margin: 50px;
+    padding: 20px;
+    }
+    
+h4, h3 {
+    margin: 20px;
+    padding: 10px;
+    }
+    
+
+@media print {
+    .no-print {
+        display: none;
+        }
+    }
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
+}    
+    
+table {
+        border: 3px solid black;
+        border-collapse: collapse;
+        width: 50%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+        
+.addspace {
+    padding : 20px;
+    font-size: 20px;
+    }
+    
+    
+.nested_scss {
+    margin-top: 80px; 
+    margin-left: 50px; 
+    font-style: normal;
+    font-size: 18px;
+    font-family: Georgia;
+    p {
+     font-style: italic;
+        .red {
+            color: red;
+            font-style: normal;
+            font-family: Lucida Console;
+            font-size: 22px;
+            }
+        .olive{
+            color: olive;
+            font-style: normal;
+            font-family: Lucida Console;
+            font-size: 24px;
+            }
+        }
+    }
+    
+
